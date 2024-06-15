@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+    <h3>Contenido Actual: </h3>
+
+    <h4>{{post.title}}</h4>
+    <p>{{post.description}}</p>
+    <hr>
+    
+    <h3>Actualizacion: </h3>
+
+    <form action="" method="post">{% csrf_token %}
+
+        {{form.as_p}}
+
+    <input type="submit" value="Update">
+    </form>
+
+
+{% endblock %}

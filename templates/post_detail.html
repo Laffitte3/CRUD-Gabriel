@@ -3,8 +3,12 @@
 
 {% block content %}
 
-<h2>{{post.title}}</h2>
-<p>{{post.description}}</p>
-<img src="{{ post.image.url }}" width="400" height="200">
+    <h2>{{post.title}}</h2>
+    <p>{{post.description}}</p>
+    <h4>Creador: {{post.author}}</h4>
+
+
+    <a href="{% url 'update' post.pk %}">Update</a>
+    <a href="{% url 'delete' post.pk %}">Delete</a>
 
 {% endblock %}

@@ -9,11 +9,9 @@
 
     {% for post in post_list %}
 
-        <a href="{% url 'detail' post.pk %}">{{post.title}}</a>
+        <h2><a href="{% url 'detail' post.pk %}">{{post.title}}</a></h2>
         <hr>
         
-        
-
     {% endfor %}
 
 {% endblock %}

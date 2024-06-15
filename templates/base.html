@@ -1,8 +1,12 @@
+{% load static %}
 
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
 
 <a href="{% url 'home' %}">Go to Home</a>
 
-<h1>Mi pagina web</h1>
+<a href="{% url 'create' %}">Create a post</a>
+
+<h1 class="header_base">Mi pagina web</h1>
 
 
 

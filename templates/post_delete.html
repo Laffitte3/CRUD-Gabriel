@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
+    <h3>Contenido Actual: </h3>
+
+    <h4>{{post.title}}</h4>
+    <p>{{post.description}}</p>
+    <h4>Autor: {{post.author}}</h4>
+    <hr>
+    
+
+<form action="" method="post">{% csrf_token %}
+
+    <p> Seguro que quieres eliminar {{post.title}} ? </p>
+    <input type="submit" value="Delete">
+
+</form>
+
+
+
+
+{% endblock %}
+
+
