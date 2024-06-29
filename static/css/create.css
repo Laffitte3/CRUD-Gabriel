@@ -1,0 +1,18 @@
+.color-create{
+    font-size: 20px;
+    color: brown;
+    
+
+    #boton{
+        font-family: monospace;
+        text-decoration: none;
+        padding: 10px 30px;
+        font-size: 15px;
+        color: black;
+        background-color: white;
+        border-radius: 24px;
+        position: static;
+    }
+
+
+}

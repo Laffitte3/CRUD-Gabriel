@@ -1,17 +1,25 @@
 
 {% extends 'base.html' %}
+{% load static %}
 
 
 
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
 
+<body id="home">
     
+    <div>
 
-    {% for post in post_list %}
+        {% for post in post_list %}
 
-        <h2><a href="{% url 'detail' post.pk %}">{{post.title}}</a></h2>
-        <hr>
-        
-    {% endfor %}
+            <h2><a id="titulos" href="{% url 'detail' post.pk %}">{{post.title}}</a></h2>
+            <hr>
+            
+        {% endfor %}
+
+    </div>
+
+</body>
 
 {% endblock %}

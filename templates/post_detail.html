@@ -1,14 +1,29 @@
 {% extends 'base.html' %}
 
+{% load static %}
 
 {% block content %}
 
-    <h2>{{post.title}}</h2>
-    <p>{{post.description}}</p>
-    <h4>Creador: {{post.author}}</h4>
+<link rel="stylesheet" href="{% static 'css/detail.css' %}">
+
+    <div id="post_block">
+        <h2>{{post.title}}</h2>
+        
+
+        {% if post.image %}
+            <img id="imagenes" src="{{ post.image.url }}" >
+        {% endif %}
+
+        <div id="description">
+        <p>{{post.description}}</p>
+        </div>
+        <h4>Creador: {{post.author}}</h4>
 
 
-    <a href="{% url 'update' post.pk %}">Update</a>
-    <a href="{% url 'delete' post.pk %}">Delete</a>
+        <div class="botones">
+            <a href="{% url 'update' post.pk %}">Update</a>
+            <a href="{% url 'delete' post.pk %}">Delete</a>
+        </div>
+    </div>
 
 {% endblock %}

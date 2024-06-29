@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Post
+from .models import Home
 from django.urls import reverse_lazy
 
 from django.views.generic import TemplateView,ListView,DetailView
@@ -12,7 +13,6 @@ from django.views.generic.edit import CreateView,UpdateView,DeleteView
 class HomePageView(ListView):
 
     template_name="home.html"
-
     model=Post
 
 
@@ -28,7 +28,7 @@ class CreatePageView(CreateView):
 
     model=Post
 
-    fields=["title","description","author"]
+    fields=["title","description","image","author"]
 
     success_url = reverse_lazy("home")
 
@@ -39,7 +39,7 @@ class UpdatePageView(UpdateView):
 
     model=Post
 
-    fields=["title","description"]
+    fields=["title","description","image"]
 
     success_url = reverse_lazy("home")
 
@@ -51,3 +51,4 @@ class DeltePageView(DeleteView):
     model=Post
 
     success_url = reverse_lazy("home")
+

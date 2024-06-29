@@ -1,20 +1,23 @@
 {% extends 'base.html' %}
+{% load static %}
 
 
 
 {% block content %}
 
+<link rel="stylesheet" href="{% static 'css/create.css' %}">
 
 <h1>New Post</h1>
 
-<form action="" method="post"> {% csrf_token %}
+<div class="color-create">
+    <form action="" method="post" enctype="multipart/form-data"> 
 
-    
-    {{ form.as_p }}
+        {% csrf_token %}
+        {{ form.as_p }}
 
-    <input type="submit" value="Create">
+        <input id="boton" type="submit" value="Create">
 
-</form>
-
+    </form>
+</div>
 
 {% endblock %}
