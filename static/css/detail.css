@@ -17,8 +17,11 @@
         height: 600px;
         border: 10px groove black;
         background-color: burlywood;
+
+        position: absolute;
+        left: 250px;
         
-        
+   
 }
 
 .botones{
@@ -26,16 +29,29 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     a{
-    text-decoration: none;
-    padding: 10px 30px;
-    font-size: 15px;
-    color: white;
-    background-color: blueviolet;
-    border-radius: 24px;
-    position: static;
-    
-    }
+        text-decoration: none;
+        padding: 10px 30px;
+        font-size: 15px;
+        color: white;
+        background-color: blueviolet;
+        border-radius: 24px;
+        }
 
 }
 
 
+#pos1{
+
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    
+}
+
+#pos2{
+
+    position: absolute;
+    top: 400px;
+    left: 350px;
+    
+}
