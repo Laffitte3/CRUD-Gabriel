@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+
+    {% if user.is_authenticated %}
+
+    <h2>Bienvenido {{ user.username }}</h2>
+
+    <a href="{% url 'home' %}"><input type="submit" value="Twitter"></a>
+
+    <a href="{% url 'logout' %}"><input type="submit" value="Log out"></a>
+
+    {% else %}
+
+    <p>Ingresa tus datos para poder ingresar a tu cuenta</p>
+
+        <a href="{% url 'login' %}"><input type="submit" value="Log In"></a>
+        
+    <p>Si no tienes una cuenta puedes registrarte haciendo click</p>
+
+        <a href="{% url 'sing up' %}"><input type="submit" value="Sign Up"></a>
+
+    {% endif %}
+
+
+</body>
+</html>
