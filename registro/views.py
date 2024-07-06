@@ -11,7 +11,7 @@ from django.contrib.auth.forms import UserCreationForm
 class FirstPageView(TemplateView):
 
 
-    template_name="registro/first_page.html"
+    template_name="registration/first_page.html"
 
 class SignupPageView(CreateView):
 

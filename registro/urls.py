@@ -7,7 +7,7 @@ urlpatterns=[
     
     path("",FirstPageView.as_view(),name="first_page"),
     path("accounts/",include("django.contrib.auth.urls")),
-    path("signup",SignupPageView.as_view(), name="signup"),
+    path("sign up",SignupPageView.as_view(), name="signup"),
     
 
 ]
