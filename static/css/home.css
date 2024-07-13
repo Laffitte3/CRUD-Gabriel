@@ -4,3 +4,12 @@
     color: brown;
     text-decoration: none;
 }
+
+#imagenes_home{
+
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    text-align: center;
+    
+}

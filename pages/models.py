@@ -7,7 +7,7 @@ class Post(models.Model):
 
     title=models.CharField(max_length=40)
     description=models.TextField()
-    image=models.ImageField(upload_to="photos/%y/%m/%d/",blank=True)
+    image=models.ImageField(upload_to="media",blank=True)
     author= models.ForeignKey("auth.User", on_delete=models.CASCADE, blank=True, null=True)
 
 

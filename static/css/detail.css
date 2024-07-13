@@ -27,23 +27,18 @@
 .botones{
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    a{
-        text-decoration: none;
-        padding: 10px 30px;
-        font-size: 15px;
-        color: white;
-        background-color: blueviolet;
-        border-radius: 24px;
-        }
-
 }
 
+.boton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
 
 #pos1{
 
     position: absolute;
-    top: 400px;
+    top: 600px;
     left: 150px;
     
 }
@@ -51,7 +46,7 @@
 #pos2{
 
     position: absolute;
-    top: 400px;
+    top: 600px;
     left: 350px;
     
 }
