@@ -1,17 +1,27 @@
 
-{% extends 'base.html' %}
+{% include 'nav.html' %}
+{% load static %}
 
 
-
-{% block content %}
-
-    
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
 
     {% for post in post_list %}
 
-        <h2><a href="{% url 'detail' post.pk %}">{{post.title}}</a></h2>
-        <hr>
+    <body>
+        <!-- <h2><a href="{% url 'detail' post.pk %}">{{post.title}}</a></h2>
+        <hr> -->
+        <div class="container">
+            <div class="card">
+                <img src="#" alt="{{ title }}">
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.description }}</p>
+                <p class="price">99</p>
+            </div>
+        </div>
         
     {% endfor %}
 
-{% endblock %}
+</body>
+</html>
+
+

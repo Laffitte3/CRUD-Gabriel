@@ -1,0 +1,71 @@
+/* Fondo de la página */
+body {
+    background: linear-gradient(to bottom, #2f4f4f, #1c1c1c); /* Degradado de verde oscuro a gris oscuro */
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Estilos para la tarjeta del formulario */
+.card-form {
+    background-color: #2b2b2b; /* Gris oscuro */
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra para que destaque */
+    color: white;
+}
+
+/* Título del formulario */
+.card-form h2 {
+    text-align: center;
+    color: #d4af37; /* Dorado claro */
+    margin-bottom: 20px;
+}
+
+/* Estilos para los campos del formulario */
+.card-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #d4af37; /* Dorado claro */
+}
+
+.card-form input[type="text"],
+.card-form textarea,
+.card-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #3a3a3a;
+    color: white;
+}
+
+/* Estilos del botón de envío */
+.card-form input[type="submit"] {
+    background-color: #d4af37; /* Dorado claro */
+    color: #2f4f4f; /* Verde oscuro */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.card-form input[type="submit"]:hover {
+    background-color: #c2a636;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-form {
+        width: 90%;
+    }
+}

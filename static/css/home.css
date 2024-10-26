@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #3A7D3A, #D9C46A); /* Degradado de verde oscuro a dorado claro */
+    color: black;
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #D9C46A; /* Dorado claro */
+    padding: 15px;
+    text-align: right;
+}
+
+.navbar a {
+    color: black; /* Color de texto negro */
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Contenedor central */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Estilo de la tarjeta */
+.card {
+    background-color: #2D2D2D; /* Gris oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px; /* Ancho de la tarjeta */
+    height: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #D9C46A; /* Color dorado claro */
+}
+
+.card p {
+    margin: 5px 0;
+    color: white; /* Texto en blanco para el contenido de la tarjeta */
+}
+
+.card .price {
+    font-weight: bold;
+    color: #D9C46A; /* Precio en dorado claro */
+}
